@@ -15,7 +15,7 @@ class Dyr {
 
   void display() {
     if (p!= null) {
-      image(p, x, y);
+      image(p, x, y,100,100);
     }
   }
 }

@@ -1,4 +1,6 @@
-//ArrayList<Dyr> dyrListe = new ArrayList<Dyr>();
+// hej
+ArrayList<Dyr> dyrListe = new ArrayList<Dyr>();
+
 Dyr d;
 
 void setup() {
@@ -8,18 +10,24 @@ void setup() {
 
 void draw() {
   clear();
-  d.move();
-  d.display();
+ 
+for (Dyr copy : dyrListe) {
+    copy.move();
+    copy.display();
+}
 }
 
 void keyPressed() {
   if (key=='1') { 
-    d = new Kat();
+    dyrListe.add(new Kat());
   }
   if (key=='2') { 
-    d = new Ko();
+    dyrListe.add(new Ko());
   }
   if (key=='3'){
-    d= new Giraf();
+    dyrListe.add(new Giraf());
+  }
+   if (key=='4'){
+    dyrListe.add(new Hjort());
   }
 }

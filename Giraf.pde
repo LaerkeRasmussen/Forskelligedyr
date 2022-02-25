@@ -5,7 +5,7 @@ class Giraf extends Dyr {
   }
 
   void move() {
-    y = sin(x*0.5)*5 + height/2;
+    y = cos(x*0.5)*10 + height/5;
     super.move();
   }
 }
